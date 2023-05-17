@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>iFood</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script type="text/javascript">
+		
+		function parallax(){
+
+			var img1 = document.getElementById('img1');
+			var img2 = document.getElementById('img2');
+
+			//Aplicando a posição de acordo com o eixo x
+			img1.style.left = -(window.pageYOffset *2)/5 +'px';
+			img2.style.right = -(window.pageYOffset *2)/5 + 'px';
+
+		}
+
+		window.addEventListener("scroll", parallax, false);
+
+	</script>
+
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="container">
+				<img class="logo" src="imgs/logo.png">
+				<ul>
+					<li>
+						<a href="#">Sobre iFood</a>
+					</li>
+					<li>
+						<a href="#">Cadastre seu Restaurante</a>
+					</li>
+					<li>
+						<a href="#">Contato</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header> 
+
+	<section class="painel-principal">
+		<div id="img1" class="img-parallax"></div>
+		<div class="teste"></div>
+		<div id="img2" class="img-parallax"></div>
+		<div class="container">
+			<div class="form">
+				<h1 class="titulo-principal">Delivery pra qualquer fome:<br>peça e receba em casa</h1>
+
+				<input class="input-principal" type="text" placeholder="Digite seu CEP"><a href="#" class="bt-buscar">Buscar</af>
+				<a href="#"></a>
+			</div>
+		</div>
+
+	</section>
+
+	<main>
+		<section class="sobre">
+			<div class="container">
+				<h2>A cada descoberta, um novo<br>restaurante favorito</h2>
+				<p>Agora temos listas com opções que combinam com qualquer<br>bolso, gosto e humor</p>
+
+				<div class="galeria">
+					<div class="img"><img src="imgs/food1.jpg"></div>
+					<div class="img"><img src="imgs/food2.jpg"></div>
+					<div class="img"><img src="imgs/food3.jpg"></div>
+					<div class="img"><img src="imgs/food4.jpg"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>© Copyright 2022 - iFood - Todos os direitos reservados</p>
+	</footer>
+
+</body>
+</html>
